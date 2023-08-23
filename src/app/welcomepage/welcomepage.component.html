@@ -1,0 +1,125 @@
+<div class="header">
+    <div class="hederLogoContener">
+        <img src="../../assets/LOGO-01.png" alt="logo" width="200px">
+    </div>
+    <div class="hederContentContener">
+        <a href="">About</a>
+        <a href="">Guide</a>
+        <a href="">Contact</a>
+        <button class="Btn" (click)="openPopup()">
+
+            <div class="sign"><svg viewBox="0 0 512 512">
+                    <path
+                        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                    </path>
+                </svg></div>
+
+            <div class="text">Login / Resister</div>
+        </button>
+    </div>
+</div>
+<div class="welcomebody">
+    <div class="welcomebodyleft">
+        <h1>Welcome to TypeMachine </h1>
+        <p>We are thrilled to have you join us on this incredible journey towards improving your typing skills . Whether
+            you're a beginner looking to enhance your accuracy and speed or an advanced learner aiming to master touch
+            typing, our software is designed to cater to learners of all levels. With a user-friendly interface,
+            engaging exercises, and interactive lessons, you'll find yourself typing confidently in no time.</p>
+
+        <!-- Enjoy your learning experience with us! -->
+        <button class="button" (click)="openPopup()">
+            Let`s go →
+        </button>
+    </div>
+    <div class="welcomebodyright">
+        <img src="../../assets/welcomePageImage-01.png" alt="" width="500px" class="welcomepageimage">
+    </div>
+</div>
+
+
+<!-- popup code  -->
+
+<div class="popup-overlay" *ngIf="showPopup">
+
+    <!-- ball animation  -->
+
+    <!-- <div class="showApiProgressanimation" *ngIf="showApiProgressanimation">
+        <div class="loader">
+            <li class="ball"></li>
+            <li class="ball"></li>
+            <li class="ball"></li>
+          </div>
+    </div> -->
+
+    <div class="ratrace" *ngIf="showApiProgressanimation">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+       </div>
+
+    <div class="popup" *ngIf="!showApiProgressanimation">
+        <div *ngIf="showLoginForm">
+            <h2>
+                Login / Resister
+            </h2>
+
+            <p>
+                It's help us to provide you more feature
+            </p>
+            <br>
+            <form #loginDetails="ngForm" (submit)="getOtp(loginDetails.value)">
+            <input type="text"  class="emailForm"  ngMode name="email" placeholder="Email" ngMode />
+            <br>
+            <button class="GetotpButton">
+                Get otp →
+            </button>
+            </form>
+            <br>
+            <hr>
+
+            <p>
+                Continue with
+            </p>
+            <div class="socialMideaButton">
+                <button class="Google">
+                    Google
+                </button>
+                <button class="facebook">
+                    Facebook
+                </button>
+            </div>
+
+
+            <button (click)="closePopup()" class="notNow">Not Now</button>
+            <a href="#">Why Create an Account?</a>
+            <div class="policyline">
+                By creating this account, you agree to our Privacy Policy & Cookie Policy.
+            </div>
+
+
+        </div>
+        <div *ngIf="showOtpForm">
+            <input class="emailForm" name="otp" placeholder="Type your OTP" type="otp">
+            <br>
+            <button class="GetotpButton">
+                Submit →
+            </button>
+        </div>
+    </div>
+
+</div>

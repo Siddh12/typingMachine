@@ -1,0 +1,44 @@
+<div class="body">
+  <div class="mainContaner">
+
+   <div>
+    <span *ngFor="let item of array">{{item}}</span>
+   </div>
+   <form #inputbox="ngForm">
+    <input type="text" class="textInputForm" (keypress)="keypress($event)">
+   </form> 
+  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Line</title>
+  <style>
+    /* Style the SVG container */
+    svg {
+      display: block;
+      margin: 0 auto;
+      background-color: #f0f0f0;
+      width: 500px;
+      height: 200px;
+    }
+
+    /* Style the wave line path */
+    path {
+      fill: none;
+      stroke: #007bff; /* Blue color, you can change it to your desired color */
+      stroke-width: 3;
+    }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+    <path d="M0 100 
+             Q125 70, 250 100 
+             T500 100" />
+  </svg>
+</body>
+</html>
+
+</div>
