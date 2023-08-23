@@ -1,6 +1,14 @@
 # TypingMachine
 # This app is about improving typing Speed. It has features like where you can start from beginner level and you can achieve max benefit, it has features where you can track your progress with beautiful graphics
 
+![image](https://github.com/Siddh12/typingMachine/assets/63955816/7d138b3d-19b5-4615-9dba-05841b15b55c)
+
+![image](https://github.com/Siddh12/typingMachine/assets/63955816/09cda006-3784-4979-b615-af62c2eb4f70) 
+
+![image](https://github.com/Siddh12/typingMachine/assets/63955816/97dbbbec-7314-4f2e-b6dc-ae02cfcb1266)
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
 ## Development server
