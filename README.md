@@ -1,4 +1,5 @@
 # TypingMachine
+# This app is about improving typing Speed. It has features like where you can start from beginner level and you can achieve max benefit, it has features where you can track your progress with beautiful graphics
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
